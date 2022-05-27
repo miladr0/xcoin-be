@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2017",
+    "module": "commonjs",
+    "sourceMap": true,
+    "outDir": "dist",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "baseUrl": "src",
+    "paths": {
+      "@app": ["app"],
+      "@config": ["config"],
+      "@middlewares/*": ["middlewares/*"],
+      "@models/*": ["models/*"],
+      "@common/*": ["common/*"],
+      "@exceptions/*": ["exceptions/*"],
+      "@v1/*": ["api/v1/*"],
+      "@__tests__/*": ["__tests__/*"]
+    }
+  }
+}
