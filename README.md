@@ -2,7 +2,6 @@
 
 - **DataDog** trace performance.
 - **Sentry** catch errors.
-- **Sentry** catch errors.
 - **API Documentation** using **Swagger**.
 - **Basic Security Features** using Helmet and hpp.
 - **Validation** using class-validator
