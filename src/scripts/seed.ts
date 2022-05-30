@@ -6,12 +6,7 @@ import { DBURL } from '@config';
 
 (async () => {
   try {
-    await mongoose.connect(DBURL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: true,
-      useFindAndModify: false,
-    });
+    await mongoose.connect(DBURL);
 
     const profile = await Profile.create({
       name: 'jack',

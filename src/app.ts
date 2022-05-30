@@ -107,12 +107,7 @@ export default class App {
   }
 
   static async initDB() {
-    await mongoose.connect(DBURL, {
-      useNewUrlParser: true,
-      useUnifiedTopology: true,
-      useCreateIndex: isProduction ? false : true,
-      useFindAndModify: false,
-    });
+    await mongoose.connect(DBURL);
   }
 
   static async closeDB() {
