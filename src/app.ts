@@ -1,4 +1,6 @@
 import 'reflect-metadata';
+import { PORT, DBURL, CORS_ORIGINS, CREDENTIALS, isProduction, SENTRY_DSN } from './config';
+
 import './tracer';
 
 import * as Sentry from '@sentry/node';
@@ -16,7 +18,6 @@ import { useExpressServer, getMetadataArgsStorage } from 'routing-controllers';
 import { routingControllersToSpec } from 'routing-controllers-openapi';
 import swaggerUi from 'swagger-ui-express';
 
-import { PORT, DBURL, CORS_ORIGINS, CREDENTIALS, isProduction, SENTRY_DSN } from './config';
 import handlingErrorsMiddleware from './middlewares/handlingErrors.middleware';
 
 let connection;
